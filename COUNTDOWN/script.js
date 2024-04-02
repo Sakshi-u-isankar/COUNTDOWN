@@ -11,7 +11,7 @@ function clock() {
     const now = new Date()
     const diff = (end - now) / 1000;
 
-    if (diff < 0 ) 
+    if (diff < 0 ) return;
 
     // convert into days;
     inputs[0].value = Math.floor(diff / 3600  / 24);
